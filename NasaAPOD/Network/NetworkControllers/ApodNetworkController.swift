@@ -14,7 +14,7 @@ class ApodNetworkController: BaseNetworkController
         super.init()
     }
     
-    func getApodList(count: Int = 50, completion: (([ApodInfoBean]?, ResponseStatus) -> Void)?) -> BaseOperation?
+    func getApodList(count: Int = 1, completion: (([ApodInfoBean]?, ResponseStatus) -> Void)?) -> BaseOperation?
     {
         do {
             ProgressHUD.show(interaction: false)

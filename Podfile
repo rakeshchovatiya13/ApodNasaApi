@@ -7,6 +7,7 @@ target 'NasaAPOD' do
 
   # Pods for NasaAPOD
   pod 'ProgressHUD'
+  pod 'SDWebImage'
 
   target 'NasaAPODTests' do
     inherit! :search_paths

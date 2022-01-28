@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ApodInfoBean: Codable
+struct ApodInfoBean: Codable, Equatable
 {
     let copyright: String?
     let date: String?

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		185111D827A3F818005B1DAF /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111CA27A3F818005B1DAF /* NetworkConfig.swift */; };
 		185111D927A3F818005B1DAF /* BaseNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111CC27A3F818005B1DAF /* BaseNetworkController.swift */; };
 		185111DA27A3F818005B1DAF /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111CE27A3F818005B1DAF /* RequestBuilder.swift */; };
+		185111F127A40EE5005B1DAF /* ScaledHeightImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111F027A40EE5005B1DAF /* ScaledHeightImageView.swift */; };
 		1859CC9827A2B342005B79AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859CC9727A2B342005B79AE /* AppDelegate.swift */; };
 		1859CC9A27A2B342005B79AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859CC9927A2B342005B79AE /* SceneDelegate.swift */; };
 		1859CC9F27A2B342005B79AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1859CC9D27A2B342005B79AE /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		185111CA27A3F818005B1DAF /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		185111CC27A3F818005B1DAF /* BaseNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkController.swift; sourceTree = "<group>"; };
 		185111CE27A3F818005B1DAF /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		185111F027A40EE5005B1DAF /* ScaledHeightImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledHeightImageView.swift; sourceTree = "<group>"; };
 		1859CC9427A2B342005B79AE /* NasaAPOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaAPOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1859CC9727A2B342005B79AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1859CC9927A2B342005B79AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +205,14 @@
 			path = RequestBuilders;
 			sourceTree = "<group>";
 		};
+		185111EF27A40EC5005B1DAF /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				185111F027A40EE5005B1DAF /* ScaledHeightImageView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		1859CC8B27A2B342005B79AE = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +220,7 @@
 				1859CCAD27A2B345005B79AE /* NasaAPODTests */,
 				1859CCB827A2B345005B79AE /* NasaAPODUITests */,
 				1859CC9527A2B342005B79AE /* Products */,
+				E5A40808C306DA052854D760 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +237,7 @@
 		1859CC9627A2B342005B79AE /* NasaAPOD */ = {
 			isa = PBXGroup;
 			children = (
+				185111EF27A40EC5005B1DAF /* CustomView */,
 				185111B827A3F818005B1DAF /* Network */,
 				1859CCE127A2B51D005B79AE /* TableViewCell */,
 				1859CCD327A2B4DC005B79AE /* ViewModel */,
@@ -280,6 +292,13 @@
 				1859CCE227A2B5CF005B79AE /* ApodTableViewCell.swift */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		E5A40808C306DA052854D760 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +435,7 @@
 				185111D827A3F818005B1DAF /* NetworkConfig.swift in Sources */,
 				185111CF27A3F818005B1DAF /* ApodNetworkController.swift in Sources */,
 				185111D027A3F818005B1DAF /* ApodInfoBean.swift in Sources */,
+				185111F127A40EE5005B1DAF /* ScaledHeightImageView.swift in Sources */,
 				1859CC9827A2B342005B79AE /* AppDelegate.swift in Sources */,
 				1859CCE327A2B5CF005B79AE /* ApodTableViewCell.swift in Sources */,
 				185111D427A3F818005B1DAF /* BaseOperation.swift in Sources */,

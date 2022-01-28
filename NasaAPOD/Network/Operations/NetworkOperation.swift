@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// Synchronous network call
 extension URLSession
 {
     func synchronousDataTask(with request: URLRequest) -> (Data?, URLResponse?, Error?)
