@@ -1,0 +1,48 @@
+[
+    {
+        "copyright":"Yuri BeletskyCarnegieLas Campanas ObservatoryTWAN",
+        "date":"2019-12-08",
+        "explanation":"Are meteors streaming out from a point in the sky? Yes, in a way. When the Earth crosses a stream of Sun-orbiting meteors, these meteors appear to come from the direction of the stream -- with the directional point called the radiant.\ufffd An example occurs every mid-December for the Geminids meteor shower, as apparent in the featured image.\ufffd Recorded near the shower's peak in 2013, the featured  skyscape captures Gemini's shooting stars in a four-hour composite from the dark skies of the Las Campanas Observatory in Chile. In the foreground the 2.5-meter du Pont Telescope is visible as well as the 1-meter SWOPE telescope. The skies beyond the meteors are highlighted by Jupiter, seen as the bright spot near the image center, the central band of our Milky Way Galaxy, seen vertically on the image left, and the pinkish Orion Nebula on the far left.  Dust swept up from the orbit of active asteroid 3200 Phaethon, Gemini's meteors enter the atmosphere traveling at about 22 kilometers per second. The 2019 Geminid meteor shower peaks again this coming weekend.",
+        "hdurl":"https://apod.nasa.gov/apod/image/1912/geminids2013_beletsky_1081.jpg",
+        "media_type":"image",
+        "service_version":"v1",
+        "title":"Geminid Meteors over Chile",
+        "url":"https://apod.nasa.gov/apod/image/1912/geminids2013_beletsky_960.jpg"
+    },
+    {
+        "copyright":"B. E. SchaeferLSU",
+        "date":"2005-01-22",
+        "explanation":"The ancient text has no known title, no known author, and is written in no known language: what does it say and why does it have many astronomy illustrations?  The mysterious book was once bought by an emperor, forgotten on a library shelf, sold for thousands of dollars, and later donated to Yale.  Possibly written in the 15th century, the over 200-page volume is known most recently as the Voynich Manuscript, after its (re-)discoverer in 1912.  Pictured above is an illustration from the book that appears to be somehow related to the Sun.  The book labels some patches of the sky with unfamiliar constellations.  The inability of modern historians of astronomy to understand the origins of these constellations is perhaps dwarfed by the inability of modern code-breakers to understand the book's text.  Can the eclectic brain trust of APOD readers make any progress?  If you think you can provide any insight, instead of sending us email please participate in an online discussion. The book itself remains in Yale's rare book collection under catalog number \"MS 408.\"",
+        "hdurl":"https://apod.nasa.gov/apod/image/0208/voynich_schaefer_big.gif",
+        "media_type":"image",
+        "service_version":"v1",
+        "title":"The Mysterious Voynich Manuscript",
+        "url":"https://apod.nasa.gov/apod/image/0208/voynich_schaefer.jpg"
+    },
+    {
+        "date":"2011-07-15",
+        "explanation":"NGC 3314 is actually two large spiral galaxies which just happen to almost exactly line up. The foreground spiral is viewed nearly face-on, its pinwheel shape defined by young bright star clusters. But against the glow of the background galaxy, dark swirling lanes of interstellar dust appear to dominate the face-on spiral's structure. The dust lanes are surprisingly pervasive, and this remarkable pair of overlapping galaxies is one of a small number of systems in which absorption of light from beyond a galaxy's own stars can be used to directly explore its distribution of dust. NGC 3314 is about 140 million light-years (background galaxy) and 117 million light-years (foreground galaxy) away in the multi-headed constellation Hydra. The background galaxy would span nearly 70,000 light-years at its estimated distance. A synthetic third channel was created to construct this dramatic new composite of the overlapping galaxies from two color image data in the Hubble Legacy Archive.",
+        "hdurl":"https://apod.nasa.gov/apod/image/1107/NGC3314_HLApugh.jpg",
+        "media_type":"image",
+        "service_version":"v1",
+        "title":"NGC 3314: When Galaxies Overlap",
+        "url":"https://apod.nasa.gov/apod/image/1107/NGC3314_HLApugh900c.jpg"},
+    {
+        "date":"2005-02-24",
+        "explanation":"Small, icy, inner moon of Saturn, Enceladus is only about 500 kilometers in diameter. But the distant world does reflect over 90 percent of the sunlight it receives, giving its surface about the same reflectivity as fresh snow. Seen here in a sharp view from the Cassini spacecraft's recent flyby, Enceladus shows a variety of surface features and very few impact craters - indicating that it has been an active world even though this tiny moon should have completely cooled off long ago. In fact, the resurfaced appearance of Enceladus could be the result of liquid water geysers or water volcanos. Since Enceladus orbits within the outer E ring of Saturn, the moon's surface may be kept snow-bright as it is continuously bombarded with icy ring particles. Eruptions on Enceladus itself would in turn supply material to the E ring. Interplanetary ski bums take note: tiny Enceladus has only about 1/100th the surface gravity of planet Earth and a surface temperature of -200 degrees C (-330 degrees F).",
+        "hdurl":"https://apod.nasa.gov/apod/image/0502/enceladus_cassini_full.jpg",
+        "media_type":"image",
+        "service_version":"v1",
+        "title":"Ski Enceladus",
+        "url":"https://apod.nasa.gov/apod/image/0502/enceladus_cassini_c.jpg"
+    },
+    {
+        "date":"2008-02-10",
+        "explanation":"Gravity can bend light, allowing huge clusters of galaxies to act as telescopes.  Almost all of the bright objects in this Hubble Space Telescope image are galaxies in the cluster known as Abell 2218.  The cluster is so massive and so compact that its gravity bends and focuses the light from galaxies that lie behind it.  As a result, multiple images of these background galaxies are distorted into long faint arcs -- a simple lensing effect analogous to viewing distant street lamps through a glass of wine.  The cluster of galaxies Abell 2218 is itself about three billion light-years away in the northern constellation of the Dragon (Draco). The power of this massive cluster telescope has allowed astronomers to detect a galaxy at redshift 5.58, the most distant galaxy yet measured.  This young, still-maturing galaxy is faintly visible to the lower right of the cluster core.   digg_url = 'http://apod.nasa.gov/apod/ap080210.html'; digg_skin = 'compact';",
+        "hdurl":"https://apod.nasa.gov/apod/image/0802/ngc2218_hst_big.jpg",
+        "media_type":"image",
+        "service_version":"v1",
+        "title":"Abell 2218: A Galaxy Cluster Lens",
+        "url":"https://apod.nasa.gov/apod/image/0802/ngc2218_hst.jpg"
+    }
+]

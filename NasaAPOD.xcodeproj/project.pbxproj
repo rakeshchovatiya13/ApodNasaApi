@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185111CF27A3F818005B1DAF /* ApodNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111BA27A3F818005B1DAF /* ApodNetworkController.swift */; };
+		185111D027A3F818005B1DAF /* ApodInfoBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111BC27A3F818005B1DAF /* ApodInfoBean.swift */; };
+		185111D127A3F818005B1DAF /* Apod_Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 185111BF27A3F818005B1DAF /* Apod_Response.json */; };
+		185111D227A3F818005B1DAF /* JsonFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111C227A3F818005B1DAF /* JsonFileManager.swift */; };
+		185111D327A3F818005B1DAF /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111C427A3F818005B1DAF /* NetworkOperation.swift */; };
+		185111D427A3F818005B1DAF /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111C527A3F818005B1DAF /* BaseOperation.swift */; };
+		185111D527A3F818005B1DAF /* NetworkOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111C627A3F818005B1DAF /* NetworkOperationQueue.swift */; };
+		185111D627A3F818005B1DAF /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111C827A3F818005B1DAF /* EndPoints.swift */; };
+		185111D727A3F818005B1DAF /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111C927A3F818005B1DAF /* ResponseStatus.swift */; };
+		185111D827A3F818005B1DAF /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111CA27A3F818005B1DAF /* NetworkConfig.swift */; };
+		185111D927A3F818005B1DAF /* BaseNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111CC27A3F818005B1DAF /* BaseNetworkController.swift */; };
+		185111DA27A3F818005B1DAF /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111CE27A3F818005B1DAF /* RequestBuilder.swift */; };
 		1859CC9827A2B342005B79AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859CC9727A2B342005B79AE /* AppDelegate.swift */; };
 		1859CC9A27A2B342005B79AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859CC9927A2B342005B79AE /* SceneDelegate.swift */; };
 		1859CC9F27A2B342005B79AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1859CC9D27A2B342005B79AE /* Main.storyboard */; };
@@ -37,6 +49,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185111BA27A3F818005B1DAF /* ApodNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodNetworkController.swift; sourceTree = "<group>"; };
+		185111BC27A3F818005B1DAF /* ApodInfoBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodInfoBean.swift; sourceTree = "<group>"; };
+		185111BF27A3F818005B1DAF /* Apod_Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Apod_Response.json; sourceTree = "<group>"; };
+		185111C227A3F818005B1DAF /* JsonFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonFileManager.swift; sourceTree = "<group>"; };
+		185111C427A3F818005B1DAF /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		185111C527A3F818005B1DAF /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
+		185111C627A3F818005B1DAF /* NetworkOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperationQueue.swift; sourceTree = "<group>"; };
+		185111C827A3F818005B1DAF /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		185111C927A3F818005B1DAF /* ResponseStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseStatus.swift; sourceTree = "<group>"; };
+		185111CA27A3F818005B1DAF /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		185111CC27A3F818005B1DAF /* BaseNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkController.swift; sourceTree = "<group>"; };
+		185111CE27A3F818005B1DAF /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		1859CC9427A2B342005B79AE /* NasaAPOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaAPOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1859CC9727A2B342005B79AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1859CC9927A2B342005B79AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +104,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185111B827A3F818005B1DAF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				185111B927A3F818005B1DAF /* NetworkControllers */,
+				185111BB27A3F818005B1DAF /* Bean */,
+				185111BD27A3F818005B1DAF /* Resources */,
+				185111C027A3F818005B1DAF /* Utils */,
+				185111C327A3F818005B1DAF /* Operations */,
+				185111C727A3F818005B1DAF /* HelperClass */,
+				185111CB27A3F818005B1DAF /* BaseNetworkController */,
+				185111CD27A3F818005B1DAF /* RequestBuilders */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		185111B927A3F818005B1DAF /* NetworkControllers */ = {
+			isa = PBXGroup;
+			children = (
+				185111BA27A3F818005B1DAF /* ApodNetworkController.swift */,
+			);
+			path = NetworkControllers;
+			sourceTree = "<group>";
+		};
+		185111BB27A3F818005B1DAF /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				185111BC27A3F818005B1DAF /* ApodInfoBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		185111BD27A3F818005B1DAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				185111BE27A3F818005B1DAF /* MockJSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		185111BE27A3F818005B1DAF /* MockJSON */ = {
+			isa = PBXGroup;
+			children = (
+				185111BF27A3F818005B1DAF /* Apod_Response.json */,
+			);
+			path = MockJSON;
+			sourceTree = "<group>";
+		};
+		185111C027A3F818005B1DAF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				185111C127A3F818005B1DAF /* FileManager */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		185111C127A3F818005B1DAF /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				185111C227A3F818005B1DAF /* JsonFileManager.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		185111C327A3F818005B1DAF /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				185111C427A3F818005B1DAF /* NetworkOperation.swift */,
+				185111C527A3F818005B1DAF /* BaseOperation.swift */,
+				185111C627A3F818005B1DAF /* NetworkOperationQueue.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		185111C727A3F818005B1DAF /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				185111C827A3F818005B1DAF /* EndPoints.swift */,
+				185111C927A3F818005B1DAF /* ResponseStatus.swift */,
+				185111CA27A3F818005B1DAF /* NetworkConfig.swift */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
+		185111CB27A3F818005B1DAF /* BaseNetworkController */ = {
+			isa = PBXGroup;
+			children = (
+				185111CC27A3F818005B1DAF /* BaseNetworkController.swift */,
+			);
+			path = BaseNetworkController;
+			sourceTree = "<group>";
+		};
+		185111CD27A3F818005B1DAF /* RequestBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				185111CE27A3F818005B1DAF /* RequestBuilder.swift */,
+			);
+			path = RequestBuilders;
+			sourceTree = "<group>";
+		};
 		1859CC8B27A2B342005B79AE = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +226,7 @@
 		1859CC9627A2B342005B79AE /* NasaAPOD */ = {
 			isa = PBXGroup;
 			children = (
+				185111B827A3F818005B1DAF /* Network */,
 				1859CCE127A2B51D005B79AE /* TableViewCell */,
 				1859CCD327A2B4DC005B79AE /* ViewModel */,
 				1859CCCD27A2B4A0005B79AE /* ViewController */,
@@ -261,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185111D127A3F818005B1DAF /* Apod_Response.json in Resources */,
 				1859CCA427A2B345005B79AE /* LaunchScreen.storyboard in Resources */,
 				1859CCA127A2B345005B79AE /* Assets.xcassets in Resources */,
 				1859CC9F27A2B342005B79AE /* Main.storyboard in Resources */,
@@ -288,11 +413,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185111D827A3F818005B1DAF /* NetworkConfig.swift in Sources */,
+				185111CF27A3F818005B1DAF /* ApodNetworkController.swift in Sources */,
+				185111D027A3F818005B1DAF /* ApodInfoBean.swift in Sources */,
 				1859CC9827A2B342005B79AE /* AppDelegate.swift in Sources */,
 				1859CCE327A2B5CF005B79AE /* ApodTableViewCell.swift in Sources */,
+				185111D427A3F818005B1DAF /* BaseOperation.swift in Sources */,
 				1859CC9A27A2B342005B79AE /* SceneDelegate.swift in Sources */,
+				185111D227A3F818005B1DAF /* JsonFileManager.swift in Sources */,
 				1859CCD527A2B4FA005B79AE /* ApodVCModel.swift in Sources */,
+				185111D727A3F818005B1DAF /* ResponseStatus.swift in Sources */,
+				185111D527A3F818005B1DAF /* NetworkOperationQueue.swift in Sources */,
+				185111D327A3F818005B1DAF /* NetworkOperation.swift in Sources */,
+				185111D927A3F818005B1DAF /* BaseNetworkController.swift in Sources */,
+				185111D627A3F818005B1DAF /* EndPoints.swift in Sources */,
 				1859CCCF27A2B4CD005B79AE /* ApodViewController.swift in Sources */,
+				185111DA27A3F818005B1DAF /* RequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
