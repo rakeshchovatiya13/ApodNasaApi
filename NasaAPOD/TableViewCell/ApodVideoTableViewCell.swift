@@ -8,9 +8,8 @@
 import AVFoundation
 import UIKit
 
-class ApodVideoTableViewCell: ApodTableViewCell
+class ApodVideoTableViewCell: ApodTableViewCell, ASAutoPlayVideoLayerContainer
 {
-    var playerController: ASVideoPlayerController?
     var videoLayer: AVPlayerLayer = AVPlayerLayer()
     var videoURL: String?
     {
@@ -28,17 +27,25 @@ class ApodVideoTableViewCell: ApodTableViewCell
     {
         super.awakeFromNib()
         
-        /// Setup  video layer
+        // Setup  video layer
         videoLayer.backgroundColor = UIColor.clear.cgColor
         videoLayer.videoGravity = AVLayerVideoGravity.resize
-        /// Add video layer in imageview to play video on thumb imageview
+        // Add video layer in imageview to play video on thumb imageview
         apodImageView.layer.addSublayer(videoLayer)
+        selectionStyle = .none
     }
     
     override func configureCell(from apodData: ApodInfoBean?)
     {
         super.configureCell(from: apodData)
         self.videoURL = apodData?.url
+    }
+    
+    override func layoutSubviews()
+    {
+        super.layoutSubviews()
+        // Set size same as thumbImageview becasue video layer we are adding as sublayer of imageview
+        videoLayer.frame = CGRect(x: 0, y: 0, width: apodImageView.frame.size.width, height: apodImageView.frame.size.height)
     }
     
     func visibleVideoHeight() -> CGFloat

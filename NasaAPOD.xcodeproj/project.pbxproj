@@ -35,6 +35,12 @@
 		1859CCD527A2B4FA005B79AE /* ApodVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859CCD427A2B4FA005B79AE /* ApodVCModel.swift */; };
 		1859CCE327A2B5CF005B79AE /* ApodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859CCE227A2B5CF005B79AE /* ApodTableViewCell.swift */; };
 		1893F5AF27A7B140002D0468 /* DefaultStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F5AE27A7B140002D0468 /* DefaultStore.swift */; };
+		1893F5BF27A7BAC0002D0468 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F5BE27A7BAC0002D0468 /* Date+Extension.swift */; };
+		1893F5C427A7BCA5002D0468 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F5C327A7BCA5002D0468 /* String+Extension.swift */; };
+		1893F5D127A7C440002D0468 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F5D027A7C440002D0468 /* UIColor+Extension.swift */; };
+		1893F5DD27A80B74002D0468 /* ApodViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F5DC27A80B74002D0468 /* ApodViewControllerTest.swift */; };
+		1893F5F227A8131B002D0468 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F5F127A8131B002D0468 /* Array+Extension.swift */; };
+		1893F5F727A81589002D0468 /* ApodVCModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F5F627A81589002D0468 /* ApodVCModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,12 @@
 		1859CCD427A2B4FA005B79AE /* ApodVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodVCModel.swift; sourceTree = "<group>"; };
 		1859CCE227A2B5CF005B79AE /* ApodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodTableViewCell.swift; sourceTree = "<group>"; };
 		1893F5AE27A7B140002D0468 /* DefaultStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStore.swift; sourceTree = "<group>"; };
+		1893F5BE27A7BAC0002D0468 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1893F5C327A7BCA5002D0468 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		1893F5D027A7C440002D0468 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1893F5DC27A80B74002D0468 /* ApodViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewControllerTest.swift; sourceTree = "<group>"; };
+		1893F5F127A8131B002D0468 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		1893F5F627A81589002D0468 /* ApodVCModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodVCModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +277,7 @@
 		1859CC9627A2B342005B79AE /* NasaAPOD */ = {
 			isa = PBXGroup;
 			children = (
+				1893F5BD27A7BA9F002D0468 /* Extension */,
 				1893F5AC27A7B117002D0468 /* DataStore */,
 				1806FAB327A6DF9C001A9110 /* CustomLibrary */,
 				185111EF27A40EC5005B1DAF /* CustomView */,
@@ -287,6 +300,8 @@
 			children = (
 				1859CCAE27A2B345005B79AE /* NasaAPODTests.swift */,
 				1859CCB027A2B345005B79AE /* Info.plist */,
+				1893F5DC27A80B74002D0468 /* ApodViewControllerTest.swift */,
+				1893F5F627A81589002D0468 /* ApodVCModelTests.swift */,
 			);
 			path = NasaAPODTests;
 			sourceTree = "<group>";
@@ -339,6 +354,17 @@
 				1893F5AE27A7B140002D0468 /* DefaultStore.swift */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		1893F5BD27A7BA9F002D0468 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1893F5BE27A7BAC0002D0468 /* Date+Extension.swift */,
+				1893F5C327A7BCA5002D0468 /* String+Extension.swift */,
+				1893F5D027A7C440002D0468 /* UIColor+Extension.swift */,
+				1893F5F127A8131B002D0468 /* Array+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		E5A40808C306DA052854D760 /* Pods */ = {
@@ -485,15 +511,19 @@
 				185111F127A40EE5005B1DAF /* ScaledHeightImageView.swift in Sources */,
 				1859CC9827A2B342005B79AE /* AppDelegate.swift in Sources */,
 				1859CCE327A2B5CF005B79AE /* ApodTableViewCell.swift in Sources */,
+				1893F5BF27A7BAC0002D0468 /* Date+Extension.swift in Sources */,
 				185111D427A3F818005B1DAF /* BaseOperation.swift in Sources */,
 				1859CC9A27A2B342005B79AE /* SceneDelegate.swift in Sources */,
+				1893F5D127A7C440002D0468 /* UIColor+Extension.swift in Sources */,
 				185111D227A3F818005B1DAF /* JsonFileManager.swift in Sources */,
+				1893F5F227A8131B002D0468 /* Array+Extension.swift in Sources */,
 				1806FAB827A6DF9C001A9110 /* ASVideoLayerObject.swift in Sources */,
 				1806FABA27A6DF9C001A9110 /* ASVideoContainer.swift in Sources */,
 				1806FAAF27A6DEC3001A9110 /* ApodVideoTableViewCell.swift in Sources */,
 				1859CCD527A2B4FA005B79AE /* ApodVCModel.swift in Sources */,
 				185111D727A3F818005B1DAF /* ResponseStatus.swift in Sources */,
 				185111D527A3F818005B1DAF /* NetworkOperationQueue.swift in Sources */,
+				1893F5C427A7BCA5002D0468 /* String+Extension.swift in Sources */,
 				185111D327A3F818005B1DAF /* NetworkOperation.swift in Sources */,
 				185111D927A3F818005B1DAF /* BaseNetworkController.swift in Sources */,
 				1806FAB927A6DF9C001A9110 /* ASVideoPlayerController.swift in Sources */,
@@ -508,6 +538,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1893F5DD27A80B74002D0468 /* ApodViewControllerTest.swift in Sources */,
+				1893F5F727A81589002D0468 /* ApodVCModelTests.swift in Sources */,
 				1859CCAF27A2B345005B79AE /* NasaAPODTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,7 +638,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -661,7 +693,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

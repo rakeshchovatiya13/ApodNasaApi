@@ -15,8 +15,8 @@ class ApodVCModel
     /// Fetch Apod List from web api and store results into  `apodList`.
     func fetchApodList(completion: (() -> Void)?)
     {
-        _ = ApodNetworkController().getApodList(count: 10, completion: { (data, response) in
-            if response.isSuccess, let apodData = data, self.apodList != apodData
+        _ = ApodNetworkController().getApodList(count: 30, completion: { (data, response) in
+            if let apodData = data
             {
                 self.apodList = apodData
             }
@@ -32,7 +32,7 @@ class ApodVCModel
     func filterApodList(for searchText: String)
     {
         filteredApodList = apodList.filter { (roster: ApodInfoBean) -> Bool in
-            return roster.title?.lowercased().contains(searchText.lowercased()) ?? false
+            return roster.date?.lowercased().contains(searchText.lowercased()) ?? false
         }
     }
     

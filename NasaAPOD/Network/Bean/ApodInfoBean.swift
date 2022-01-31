@@ -7,7 +7,13 @@
 
 import Foundation
 
-struct ApodInfoBean: Codable, Equatable
+struct ErrorResponse: Codable
+{
+    let code: Int?
+    let msg: String?
+}
+
+struct ApodInfoBean: Codable
 {
     let copyright: String?
     let date: String?
@@ -16,18 +22,18 @@ struct ApodInfoBean: Codable, Equatable
     let media_type: MediaType
     let title: String?
     let url: String?
+    let thumbnail_url: String?
 }
 
 enum MediaType: String, Equatable
 {
     case image
     case video
-    case none
 }
 
 extension MediaType: Codable
 {
     public init(from decoder: Decoder) throws {
-        self = try MediaType(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .none
+        self = try MediaType(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .image
     }
 }

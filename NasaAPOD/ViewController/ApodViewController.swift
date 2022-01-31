@@ -22,14 +22,15 @@ class ApodViewController: UIViewController
     {
         super.viewDidLoad()
     
-        /// Setup search controller for filter data based on date
+        self.title = "Astronomy Picture of the Day"
+        // Setup search controller for filter data based on date
         setupSearchController()
-        /// Fetch apod data from server to display on tableview
+        // Fetch apod data from server to display on tableview
         viewModel.fetchApodList {
             self.tableView.reloadData()
         }
         
-        /// Add observer for enter into foreground
+        // Add observer for enter into foreground
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.appEnteredFromBackground),
                                                name: UIApplication.willEnterForegroundNotification,
@@ -63,7 +64,7 @@ extension ApodViewController: UISearchResultsUpdating
         // 2
         searchController.obscuresBackgroundDuringPresentation = false
         // 3
-        searchController.searchBar.placeholder = "Search Apod"
+        searchController.searchBar.placeholder = "Search Apod by date"
         // 4
         navigationItem.searchController = searchController
         // 5
@@ -101,11 +102,31 @@ extension ApodViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ApodTableViewCell") as? ApodTableViewCell else {
-            return UITableViewCell()
+        if let cellData = viewModel.getApodList(isFiltering: isFiltering).item(at: indexPath.row)
+        {
+            switch cellData.media_type
+            {
+            case .image:
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "ApodTableViewCell") as? ApodTableViewCell
+                {
+                    cell.indexpath = indexPath
+                    cell.delegate = self
+                    cell.configureCell(from: cellData)
+                    return cell
+                }
+                
+            case .video:
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "ApodVideoTableViewCell") as? ApodVideoTableViewCell
+                {
+                    cell.indexpath = indexPath
+                    cell.delegate = self
+                    cell.configureCell(from: cellData)
+                    return cell
+                }
+            }
         }
-        cell.configureCell(from: viewModel.getApodList(isFiltering: isFiltering)[indexPath.row])
-        return cell
+        
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
@@ -115,7 +136,7 @@ extension ApodViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
-        /// Pause and remove video player layer from cell on didEndDisplaying.
+        // Pause and remove video player layer from cell on didEndDisplaying.
         if let videoCell = cell as? ASAutoPlayVideoLayerContainer, let _ = videoCell.videoURL
         {
             ASVideoPlayerController.sharedVideoPlayer.removeLayerFor(cell: videoCell)
@@ -138,6 +159,21 @@ extension ApodViewController
         if !decelerate
         {
             pausePlayeVideos()
+        }
+    }
+}
+
+// MARK: ApodTableViewCellDelegate
+extension ApodViewController: ApodTableViewCellDelegate
+{
+    // reloadRow(at indexpath) to refresh UI and contentsize of cell based on available content
+    func reloadRow(at indexpath: IndexPath?)
+    {
+        if let indexPath = indexpath
+        {
+            self.tableView.beginUpdates()
+            self.tableView.reloadRows(at: [indexPath], with: .none)
+            self.tableView.endUpdates()
         }
     }
 }

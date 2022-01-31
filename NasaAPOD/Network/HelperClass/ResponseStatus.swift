@@ -40,31 +40,33 @@ public class ResponseStatus
     public internal(set) var errorCode: Int = 0
     public internal(set) var statusCode: Int = 0
     public internal(set) var error: Error?
-    
-    public var description: String {
-        let errorString = (error != nil) ? error.debugDescription : ""
-        return ("Response: \n Status Code: \(statusCode) \n Error Code: \(errorCode) \n Message: "  + errorMessage + "\n Error: " + errorString)
-    }
 
-    public var isSuccess: Bool {
+    public var isSuccess: Bool
+    {
         return statusCode == HttpStatusCode.CODE_200.rawValue && errorCode == 0
     }
     
     init() {
     }
     
-    init(data: Data?, response: URLResponse?, error: Error?) {
+    init(data: Data?, response: URLResponse?, error: Error?)
+    {
         self.error = error
-        if let response = response {
-            if let httpResponse = response as? HTTPURLResponse {
+        if let response = response
+        {
+            if let httpResponse = response as? HTTPURLResponse
+            {
                 self.statusCode = httpResponse.statusCode
             }
         }
 
-        if let error = error {
+        if let error = error
+        {
             self.errorMessage = error.localizedDescription
             self.errorCode = InAppErrorCodes.sessionExpired.rawValue
-        } else if let data = data {
+        }
+        else if let data = data
+        {
             do {
                 let responseData = try JSONDecoder().decode(ResponseData.self, from: data)
                 self.errorMessage = responseData.data ?? ""
