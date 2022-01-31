@@ -32,9 +32,10 @@ class ScaledHeightImageView: UIImageView
         completion?()
     }
     
-    func setImage(urlString: String?, completion: (() -> Void)? = nil)
+    func setImage(urlString: String?, placeholderImage: UIImage? = nil, completion: (() -> Void)? = nil)
     {
-        sd_setImage(with: URL(string: urlString ?? "")) { (image, error, type, url) in
+        setImage(image: placeholderImage)
+        sd_setImage(with: URL(string: urlString ?? ""), placeholderImage: placeholderImage) { (image, error, type, url) in
             self.setImage(image: image, completion: completion)
         }
     }

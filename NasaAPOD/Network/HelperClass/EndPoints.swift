@@ -31,7 +31,7 @@ class EndPoints
     
     static func getRequestURL(api : Apod_API, count: Int) -> URL?
     {
-        return RequestBuilder().encodeQueryParameter(parameters: ["api_key" : API_KEY, "count" : count],
+        return RequestBuilder().encodeQueryParameter(parameters: ["api_key" : API_KEY, "count" : count, "thumbs" : true],
                                                      url: BASE_URL + api.rawValue)
     }
     

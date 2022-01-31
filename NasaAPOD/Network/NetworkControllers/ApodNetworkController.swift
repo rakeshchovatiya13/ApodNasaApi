@@ -28,23 +28,30 @@ class ApodNetworkController: BaseNetworkController
             
             return addOperation(request: requestObj, jsonPath: .apod) { (data, _, responseStatus) in
                 
-                var apodList: [ApodInfoBean]?
+                var apodData: [ApodInfoBean]?
                 if let data = data
                 {
-                    apodList = BaseNetworkController.decodeData(data: data)
+                    apodData = BaseNetworkController.decodeData(data: data)
                 }
                 
                 if !responseStatus.isSuccess
                 {
+                    /// Should show last cashed data on api call failure
+                    apodData = DefaultStore.getObject(key: .apodInfoData)
                     ProgressHUD.showFailed(responseStatus.errorMessage)
                 }
                 else
                 {
+                    /// Cashe latest apod data on every successful api call
+                    if let apodList = apodData, apodList.count > 0
+                    {
+                        DefaultStore.setObject(value: apodList, key: .apodInfoData)
+                    }
                     ProgressHUD.dismiss()
                 }
 
                 DispatchQueue.main.async {
-                    completion?(apodList, responseStatus)
+                    completion?(apodData, responseStatus)
                 }
             }
         } catch let error {

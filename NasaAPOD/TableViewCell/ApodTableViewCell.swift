@@ -18,7 +18,7 @@ class ApodTableViewCell: UITableViewCell
         return stackView
     }()
     
-    lazy var astronomyImageView: ScaledHeightImageView =
+    lazy var apodImageView: ScaledHeightImageView =
     {
         let imageView = ScaledHeightImageView(frame: CGRect(x: 0,
                                                             y: 0,
@@ -72,14 +72,15 @@ class ApodTableViewCell: UITableViewCell
         ])
         
         vStackView.addArrangedSubview(dateLabel)
-        vStackView.addArrangedSubview(astronomyImageView)
+        vStackView.addArrangedSubview(apodImageView)
         vStackView.addArrangedSubview(titleLabel)
         vStackView.addArrangedSubview(explanationLabel)
     }
     
-    func setContent(from apodData: ApodInfoBean?)
+    func configureCell(from apodData: ApodInfoBean?)
     {
-        astronomyImageView.setImage(urlString: apodData?.hdurl)
+        apodImageView.setImage(urlString: apodData?.hdurl,
+                               placeholderImage: UIImage(named: "placeholder"))
         dateLabel.text = apodData?.date
         titleLabel.text = apodData?.title
         explanationLabel.text = apodData?.explanation

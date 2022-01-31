@@ -28,6 +28,26 @@ class ApodViewController: UIViewController
         viewModel.fetchApodList {
             self.tableView.reloadData()
         }
+        
+        /// Add observer for enter into foreground
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.appEnteredFromBackground),
+                                               name: UIApplication.willEnterForegroundNotification,
+                                               object: nil)
+    }
+}
+
+/// Handle video player for play/pause
+extension ApodViewController
+{
+    func pausePlayeVideos()
+    {
+        ASVideoPlayerController.sharedVideoPlayer.pausePlayeVideosFor(tableView: tableView)
+    }
+    
+    @objc func appEnteredFromBackground()
+    {
+        ASVideoPlayerController.sharedVideoPlayer.pausePlayeVideosFor(tableView: tableView, appEnteredFromBackground: true)
     }
 }
 
@@ -84,12 +104,40 @@ extension ApodViewController: UITableViewDataSource, UITableViewDelegate
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ApodTableViewCell") as? ApodTableViewCell else {
             return UITableViewCell()
         }
-        cell.setContent(from: viewModel.getApodList(isFiltering: isFiltering)[indexPath.row])
+        cell.configureCell(from: viewModel.getApodList(isFiltering: isFiltering)[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         tableView.deselectRow(at: indexPath, animated: false)
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath)
+    {
+        /// Pause and remove video player layer from cell on didEndDisplaying.
+        if let videoCell = cell as? ASAutoPlayVideoLayerContainer, let _ = videoCell.videoURL
+        {
+            ASVideoPlayerController.sharedVideoPlayer.removeLayerFor(cell: videoCell)
+        }
+    }
+}
+
+// MARK: ScrollView Listner
+
+/// Handle pause/play on tableview scrollview scroll up/down
+extension ApodViewController
+{
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView)
+    {
+        pausePlayeVideos()
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool)
+    {
+        if !decelerate
+        {
+            pausePlayeVideos()
+        }
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1806FAAF27A6DEC3001A9110 /* ApodVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806FAAE27A6DEC3001A9110 /* ApodVideoTableViewCell.swift */; };
+		1806FAB827A6DF9C001A9110 /* ASVideoLayerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806FAB527A6DF9C001A9110 /* ASVideoLayerObject.swift */; };
+		1806FAB927A6DF9C001A9110 /* ASVideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806FAB627A6DF9C001A9110 /* ASVideoPlayerController.swift */; };
+		1806FABA27A6DF9C001A9110 /* ASVideoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806FAB727A6DF9C001A9110 /* ASVideoContainer.swift */; };
 		185111CF27A3F818005B1DAF /* ApodNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111BA27A3F818005B1DAF /* ApodNetworkController.swift */; };
 		185111D027A3F818005B1DAF /* ApodInfoBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185111BC27A3F818005B1DAF /* ApodInfoBean.swift */; };
 		185111D127A3F818005B1DAF /* Apod_Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 185111BF27A3F818005B1DAF /* Apod_Response.json */; };
@@ -30,6 +34,7 @@
 		1859CCCF27A2B4CD005B79AE /* ApodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859CCCE27A2B4CD005B79AE /* ApodViewController.swift */; };
 		1859CCD527A2B4FA005B79AE /* ApodVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859CCD427A2B4FA005B79AE /* ApodVCModel.swift */; };
 		1859CCE327A2B5CF005B79AE /* ApodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859CCE227A2B5CF005B79AE /* ApodTableViewCell.swift */; };
+		1893F5AF27A7B140002D0468 /* DefaultStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F5AE27A7B140002D0468 /* DefaultStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1806FAAE27A6DEC3001A9110 /* ApodVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodVideoTableViewCell.swift; sourceTree = "<group>"; };
+		1806FAB527A6DF9C001A9110 /* ASVideoLayerObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASVideoLayerObject.swift; sourceTree = "<group>"; };
+		1806FAB627A6DF9C001A9110 /* ASVideoPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASVideoPlayerController.swift; sourceTree = "<group>"; };
+		1806FAB727A6DF9C001A9110 /* ASVideoContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASVideoContainer.swift; sourceTree = "<group>"; };
 		185111BA27A3F818005B1DAF /* ApodNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodNetworkController.swift; sourceTree = "<group>"; };
 		185111BC27A3F818005B1DAF /* ApodInfoBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodInfoBean.swift; sourceTree = "<group>"; };
 		185111BF27A3F818005B1DAF /* Apod_Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Apod_Response.json; sourceTree = "<group>"; };
@@ -79,6 +88,7 @@
 		1859CCCE27A2B4CD005B79AE /* ApodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodViewController.swift; sourceTree = "<group>"; };
 		1859CCD427A2B4FA005B79AE /* ApodVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodVCModel.swift; sourceTree = "<group>"; };
 		1859CCE227A2B5CF005B79AE /* ApodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodTableViewCell.swift; sourceTree = "<group>"; };
+		1893F5AE27A7B140002D0468 /* DefaultStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1806FAB327A6DF9C001A9110 /* CustomLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				1806FAB427A6DF9C001A9110 /* VideoPlayLibrary */,
+			);
+			path = CustomLibrary;
+			sourceTree = "<group>";
+		};
+		1806FAB427A6DF9C001A9110 /* VideoPlayLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				1806FAB527A6DF9C001A9110 /* ASVideoLayerObject.swift */,
+				1806FAB627A6DF9C001A9110 /* ASVideoPlayerController.swift */,
+				1806FAB727A6DF9C001A9110 /* ASVideoContainer.swift */,
+			);
+			path = VideoPlayLibrary;
+			sourceTree = "<group>";
+		};
 		185111B827A3F818005B1DAF /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +265,8 @@
 		1859CC9627A2B342005B79AE /* NasaAPOD */ = {
 			isa = PBXGroup;
 			children = (
+				1893F5AC27A7B117002D0468 /* DataStore */,
+				1806FAB327A6DF9C001A9110 /* CustomLibrary */,
 				185111EF27A40EC5005B1DAF /* CustomView */,
 				185111B827A3F818005B1DAF /* Network */,
 				1859CCE127A2B51D005B79AE /* TableViewCell */,
@@ -290,8 +320,25 @@
 			isa = PBXGroup;
 			children = (
 				1859CCE227A2B5CF005B79AE /* ApodTableViewCell.swift */,
+				1806FAAE27A6DEC3001A9110 /* ApodVideoTableViewCell.swift */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		1893F5AC27A7B117002D0468 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				1893F5AD27A7B126002D0468 /* UserDefaults */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		1893F5AD27A7B126002D0468 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				1893F5AE27A7B140002D0468 /* DefaultStore.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		E5A40808C306DA052854D760 /* Pods */ = {
@@ -441,12 +488,17 @@
 				185111D427A3F818005B1DAF /* BaseOperation.swift in Sources */,
 				1859CC9A27A2B342005B79AE /* SceneDelegate.swift in Sources */,
 				185111D227A3F818005B1DAF /* JsonFileManager.swift in Sources */,
+				1806FAB827A6DF9C001A9110 /* ASVideoLayerObject.swift in Sources */,
+				1806FABA27A6DF9C001A9110 /* ASVideoContainer.swift in Sources */,
+				1806FAAF27A6DEC3001A9110 /* ApodVideoTableViewCell.swift in Sources */,
 				1859CCD527A2B4FA005B79AE /* ApodVCModel.swift in Sources */,
 				185111D727A3F818005B1DAF /* ResponseStatus.swift in Sources */,
 				185111D527A3F818005B1DAF /* NetworkOperationQueue.swift in Sources */,
 				185111D327A3F818005B1DAF /* NetworkOperation.swift in Sources */,
 				185111D927A3F818005B1DAF /* BaseNetworkController.swift in Sources */,
+				1806FAB927A6DF9C001A9110 /* ASVideoPlayerController.swift in Sources */,
 				185111D627A3F818005B1DAF /* EndPoints.swift in Sources */,
+				1893F5AF27A7B140002D0468 /* DefaultStore.swift in Sources */,
 				1859CCCF27A2B4CD005B79AE /* ApodViewController.swift in Sources */,
 				185111DA27A3F818005B1DAF /* RequestBuilder.swift in Sources */,
 			);
