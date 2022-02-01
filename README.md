@@ -1,5 +1,8 @@
 # ApodNasaApi
 This project is created as part of the exercise is to create a mobile app that helps with displaying NASA’s Astronomy picture of the day
+<div align="center">
+        <img width="45%" src="https://user-images.githubusercontent.com/65060903/151961967-f0fa8e1e-00c3-40e0-ab0f-56e8bf082809.png"</img>
+</div>
 
 ## Features
 •    Allow users to search for the picture for a date of their choice
