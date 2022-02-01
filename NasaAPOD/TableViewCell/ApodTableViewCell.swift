@@ -104,9 +104,7 @@ class ApodTableViewCell: UITableViewCell
     func configureCell(from apodData: ApodInfoBean?)
     {
         apodImageView.setImage(urlString: getImageUrl(from: apodData),
-                               placeholderImage: UIImage(named: "placeholder")) {
-            self.delegate?.reloadRow(at: self.indexpath)
-        }
+                               placeholderImage: UIImage(named: "placeholder"))
         dateLabel.text = apodData?.date?.mdyformattedDate
         titleLabel.text = apodData?.title
         explanationLabel.text = apodData?.explanation

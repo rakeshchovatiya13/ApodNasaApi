@@ -38,6 +38,7 @@ class ApodVideoTableViewCell: ApodTableViewCell, ASAutoPlayVideoLayerContainer
     override func configureCell(from apodData: ApodInfoBean?)
     {
         super.configureCell(from: apodData)
+        // NOTE: Make sure video url is correct otherwise will print message failed to load asset
         self.videoURL = apodData?.url
     }
     
